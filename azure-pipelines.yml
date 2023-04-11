@@ -1,13 +1,4 @@
-# Docker
-- task: aquasecScanner@4
-  inputs:
-    scanType: 'local'
-    register: true
-    hideBase: false
-    showNegligible: false
-    windowsScannerVersion: '6.5.0'
-    connection: 'Eser-Scanner'
-# Build a Docker image
+
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
