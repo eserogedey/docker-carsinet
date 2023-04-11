@@ -28,13 +28,9 @@ stages:
           $(tag)
 - task: aquasecScanner@4
   inputs:
-    image: 'hilmiesen/alpine-carsinet'
-    scanType: 'hosted'
-    register: false
+    scanType: 'local'
+    register: true
     hideBase: false
     showNegligible: false
     windowsScannerVersion: '6.5.0'
-    registry: 'docker'
-    connection: 'Eser-Scanner'
-    scanMalware: true
-    showWillNotFix: true
+          
