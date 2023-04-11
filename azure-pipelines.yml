@@ -29,8 +29,8 @@ stages:
 - task: aquasecScanner@4
   inputs:
     image: 'hilmiesen/alpine-carsinet:latest'
-    scanType: 'hosted'
-    register: false
+    scanType: 'dockerarchive'
+    register: true
     hideBase: false
     showNegligible: false
     windowsScannerVersion: '6.5.0'
