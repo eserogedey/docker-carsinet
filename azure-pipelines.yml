@@ -26,15 +26,3 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
-- task: aquasecScanner@4
-  inputs:
-    image: 'alpine'
-    scanType: 'hosted'
-    register: false
-    hideBase: false
-    showNegligible: false
-    windowsScannerVersion: '6.5.0'
-    registry: 'Docker'
-    connection: 'Eser-Scanner'
-    policies: 'Default'
-    caCertificates: true
